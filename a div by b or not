@@ -10,6 +10,7 @@ public class div_or_not {
         else {
             if (first_no % second_no ==0) System.out.println(first_no+" is div by "+second_no);
             else System.out.println(first_no+" is not div by "+second_no);
+
         }
     }
 }
