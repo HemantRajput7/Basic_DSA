@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class ascii_char {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter ASCII in range 0-127: ");
+        int ascii=sc.nextInt();
+        if (ascii >=0 && ascii <=127) {
+            char ch=(char)ascii;
+            System.out.println("Character for ASCII "+ascii+ " is: "+ch);
+        } else System.out.println("ASCII INVALID!");
+    }
+}
