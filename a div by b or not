@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class div_or_not {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter 1st int: ");
+        int first_no= sc.nextInt();
+        System.out.print("Enter 2nd int: ");
+        int second_no= sc.nextInt();
+        if (second_no == 0) System.out.println("Division by Zero is not allowed!");
+        else {
+            if (first_no % second_no ==0) System.out.println(first_no+" is div by "+second_no);
+            else System.out.println(first_no+" is not div by "+second_no);
+        }
+    }
+}
