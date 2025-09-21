@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class profit_loss {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("What is the Cost Price of banana per Dozen: ");
+        float cost=sc.nextInt();
+        System.out.print("What is the Selling Price of banana per Dozen: ");
+        float sell= sc.nextInt();
+        float CPfor25=(cost/12)*25;
+        float SPfor25=(sell/12)*25;
+        float profit,loss;
+        //profit or Loss
+        if (CPfor25 > SPfor25) {
+            loss=CPfor25 - SPfor25;
+            System.out.println("You had loss of Rs." +loss + " on selling 25 bananas");
+        } else if (SPfor25 > CPfor25) {
+            profit=SPfor25 - CPfor25;
+            System.out.println("You earned profit of Rs." + profit+" on selling 25 bananas");
+        } else System.out.println("No profit, No loss on selling 25 bananas");
+    }
+}
