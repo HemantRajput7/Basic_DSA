@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class countDigits {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter any number: ");
+        int n=sc.nextInt();
+        int countDigits=0;
+        while (n>0){
+            n/=10;
+            countDigits++;
+        }
+        System.out.println("Total Digits in Given No is: "+countDigits);
+    }
+}
