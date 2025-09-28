@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Leap_yr {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter any Start year: ");
+        int st_yr=sc.nextInt();
+        System.out.print("Enter the End year: ");
+        int end_yr=sc.nextInt();
+        System.out.print("Leap years btw "+st_yr +"-"+end_yr+" are: ");
+        if (end_yr >= st_yr) {
+            for (int i=st_yr;i<=end_yr;i++) {
+                if ((i % 4 == 0 && i % 100 != 0) || i % 400 == 0) System.out.print(i + ", ");
+            }
+        } else System.out.println("!Wrong End Year!");
+    }
+}
