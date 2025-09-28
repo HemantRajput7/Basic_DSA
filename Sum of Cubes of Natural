@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class cub_of_nat {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter any postive No: ");
+        int n = sc.nextInt();
+        int sum = 0, cub = 0;
+        for (int i = 1; i <= n; i++) {
+            cub = i * i*i;
+            sum += cub;
+        }
+        System.out.println("Sum of squares of first N natural numbers is: " + sum);
+    }
+}
