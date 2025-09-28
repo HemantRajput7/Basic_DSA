@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class temp_converter {
+    static float FahrenTOCelsius(float F){
+        return ((F-32)*5)/9;
+    }
+    static float CelsTOFahren(float C){
+        return ((C*9)/5)+32;
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("     TEMPERATURE CONVERTER    ");
+        System.out.println("Choose Conversion Type Below Listed");
+        System.out.println("1-Fahrenheit to Celsius");
+        System.out.println("2-Celsius to Fahrenheit");
+        System.out.print("Enter conversion type(1 or 2): ");
+        int choice=sc.nextInt();
+        float temp;
+        if (choice ==1){
+            System.out.print("Enter Temperature in Fahrenheit: ");
+            temp=sc.nextFloat();
+            System.out.println("Given Temperature in Celsius is: "+FahrenTOCelsius(temp)+ "^C");
+        } else if (choice ==2) {
+            System.out.print("Enter Temperature in Celsius: ");
+            temp=sc.nextFloat();
+            System.out.println("Given Temperature in Fahrenheit is: "+CelsTOFahren(temp)+ "^F");
+        } else System.out.println("Given Choice is INVALID!");
+    }
+}
