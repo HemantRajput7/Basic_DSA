@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class sq_of_nat {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter any postive No: ");
+        int n=sc.nextInt();
+        int sum=0,sq=0;
+        for (int i=1;i<=n;i++) {
+            sq=i*i;
+            sum+=sq;
+        }
+        System.out.println("Sum of squares of first N natural numbers is: "+sum);
+    }
+}
